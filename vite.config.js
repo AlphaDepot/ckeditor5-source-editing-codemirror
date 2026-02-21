@@ -7,7 +7,7 @@ export default defineConfig({
     build: {
         // Build from project root, not Sample/
         outDir: '../dist',
-        emptyOutDir: true,
+        emptyOutDir: false,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'SourceEditingCodeMirror',
@@ -16,6 +16,7 @@ export default defineConfig({
         },
         rollupOptions: {
             external: [
+                'ckeditor5',
                 '@codemirror/view',
                 '@codemirror/state',
                 '@codemirror/language',
@@ -29,6 +30,7 @@ export default defineConfig({
             ],
             output: {
                 globals: {
+                    'ckeditor5': 'CKEditor',
                     '@codemirror/view': 'CodeMirrorView',
                     '@codemirror/state': 'CodeMirrorState',
                     '@codemirror/language': 'CodeMirrorLanguage',
