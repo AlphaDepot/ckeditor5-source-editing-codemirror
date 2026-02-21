@@ -22,7 +22,7 @@ A powerful CKEditor 5 plugin that integrates CodeMirror 6 as the source editing 
 Install the package using npm:
 
 ```bash
-npm install ckeditor5-source-editing-codemirror
+npm install @lstsystems/ckeditor5-source-editing-codemirror
 ```
 
 ## Usage
