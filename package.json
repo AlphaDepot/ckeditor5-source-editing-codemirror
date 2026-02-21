@@ -1,23 +1,21 @@
 {
-  "name": "ckeditor5-source-editing-codemirror",
+  "name": "@lstsystems/ckeditor5-source-editing-codemirror",
   "description": "Source editing plugin for CKEditor 5 using CodeMirror.",
-  "private": true,
+  "private": false,
   "version": "47.5.0",
   "type": "module",
-  "main": "src/index.js",
-  "module": "src/index.js",
-  "types": "src/index.d.ts",
-
+  "main": "dist/sourceediting-codemirror.js",
+  "module": "dist/sourceediting-codemirror.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./src/index.js",
-      "types": "./src/index.d.ts"
+      "import": "./dist/sourceediting-codemirror.js",
+      "types": "./dist/index.d.ts"
     }
   },
-
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "preview": "vite preview",
     "test": "playwright test",
     "test:ui": "playwright test --ui"
@@ -36,7 +34,7 @@
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
   },
-  "author": "CKSource (https://cksource.com/)",
+  "author": "LST Systems",
   "license": "SEE LICENSE.md",
-  "homepage": "https://ckeditor.com"
+  "homepage": "https://github.com/AlphaDepot/ckeditor5-source-editing-codemirror"
 }
