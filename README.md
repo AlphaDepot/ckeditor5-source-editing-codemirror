@@ -97,3 +97,8 @@ Sample/
 2. The HTML content is automatically formatted using Prettier before being displayed in CodeMirror
 3. As you edit the code in CodeMirror, changes are synchronized back to the CKEditor instance in real-time
 4. When exiting source editing mode, the CodeMirror instance is destroyed and the original textarea is restored
+
+## Versioning
+
+This package uses **semantic versioning aligned with CKEditor 5's SourceEditing plugin** to ensure compatibility. Each release of this plugin is designed to work with the corresponding version of the SourceEditing plugin.
+
