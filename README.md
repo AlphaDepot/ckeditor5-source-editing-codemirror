@@ -46,27 +46,6 @@ ClassicEditor.create(document.querySelector('#editor'), {
 .catch(error => console.error(error));
 ```
 
-### Configuration
-
-You can customize CodeMirror behavior by providing configuration options:
-
-```typescript
-ClassicEditor.create(document.querySelector('#editor'), {
-    plugins: [
-        Essentials,
-        SourceEditing,
-        SourceEditingCodeMirror
-    ],
-    sourceEditingCodeMirror: {
-        extensions: [
-            // Add additional CodeMirror extensions here
-        ]
-    }
-})
-.catch(error => console.error(error));
-```
-
-
 ## Development
 
 ### Scripts
