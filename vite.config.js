@@ -5,14 +5,13 @@ export default defineConfig({
     root: 'Sample',
 
     build: {
-        // Build from project root, not Sample/
         outDir: '../dist',
         emptyOutDir: false,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'SourceEditingCodeMirror',
             fileName: 'sourceediting-codemirror',
-            formats: ['es']   // You only need ESM for CKEditor
+            formats: ['es']
         },
         rollupOptions: {
             external: [
@@ -43,8 +42,6 @@ export default defineConfig({
                     'prettier/plugins/yaml': 'prettierYaml'
                 }
             }
-
         }
-    },
-
+    }
 });
